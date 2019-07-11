@@ -1,4 +1,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/shihabEK/Sms-Gateway-Handler.svg)](https://github.com/shihabEK/Sms-Gateway-Handler/issues)
+[![GitHub forks](https://img.shields.io/github/forks/shihabEK/Sms-Gateway-Handler.svg)](https://github.com/shihabEK/Sms-Gateway-Handler/network)
+[![GitHub stars](https://img.shields.io/github/stars/shihabEK/Sms-Gateway-Handler.svg)](https://github.com/shihabEK/Sms-Gateway-Handler/stargazers)
+[![GitHub license](https://img.shields.io/github/license/shihabEK/Sms-Gateway-Handler.svg)](https://github.com/shihabEK/Sms-Gateway-Handler)
+![GitHub All Releases](https://img.shields.io/github/downloads/shihabEK/Sms-Gateway-Handler/total.svg)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/shihabEK/Sms-Gateway-Handler.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FshihabEK%2FSms-Gateway-Handler)
 
 # SMS Gateway Handler
 
