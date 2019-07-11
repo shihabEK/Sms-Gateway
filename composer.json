@@ -1,6 +1,6 @@
 {
     "name": "shaab/sms",
-    "description": "Laravel package for SMS send",
+    "description": "A package for make SMS sending using various gateway under a single package. It will reduce the complisity of the code.",
     "type": "library",
     "license": "MIT",
     "authors": [{
@@ -11,6 +11,16 @@
     "autoload": {
         "psr-4": {
             "shaab\\sms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "shaab\\sms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "SMS": "shaab\\sms\\Facades\\sms"
+            }
         }
     }
 }
