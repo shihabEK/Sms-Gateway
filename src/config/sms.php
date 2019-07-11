@@ -3,16 +3,26 @@
 
 return [
 
-    'default_gateway' => 'MSG91',     // Available Gateways : MSG91
+    //Default Values
 
+    'default'   =>  [
+        'gateway' => 'msg91',
+        'sender_id' => 'SHIHAB',     // 6 Characters only
+    ],
 
-    //MSG91 Parameters
-    //Log on to msg91.com for account
-    'sender_id' => 'SHIHAB',     // 6 Characters only
-    'authKey'   => '< your auth key >', //authKey from MSG91
-    'default_route' => '4', // 1: Promotional 4: Transectional
+    //MSG91 Configaration
 
-    //-------------------------
+    'MSG91' => [
+        'authKey'   => '< your auth key >', //authKey from MSG91
+        'default_route' => '4', // 1: Promotional 4: Transectional
+    ],
+
+    //TextLocal Configaration
+
+    'TextLocal' =>  [
+        'apiKey'   => '< your auth key >', //authKey from TextLocal
+    ]
+
 
 
 ];
