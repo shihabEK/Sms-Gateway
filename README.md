@@ -41,14 +41,14 @@ This Laravel Package will helpto  send SMS through various SMS Gateways simpler 
     ```
 2. Call function
 
-    ***Syntax: SMS::($to,$message);***
+    Syntax:- ***SMS::($to,$message);***
 
     ```
     SMS::send(9567######,"Thank you!");
     ```
 
 
-    `to`: Single number or an array of numbers
+    `to`: Single mobile number or an array of numbers
 
     Note: Its basic function in the package
 
