@@ -1,0 +1,16 @@
+{
+    "name": "shaab/sms",
+    "description": "Laravel package for SMS send",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Shihab EK",
+        "email": "iam@shihabek.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "shaab\\sms\\": "src/"
+        }
+    }
+}
