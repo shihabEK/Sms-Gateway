@@ -1,3 +1,5 @@
+[![GitHub issues](https://img.shields.io/github/issues/shihabEK/Sms-Gateway-Handler.svg)](https://github.com/shihabEK/Sms-Gateway-Handler/issues)
+
 # SMS Gateway Handler
 
 This Laravel Package will helpto  send SMS through various SMS Gateways simpler than ever.
