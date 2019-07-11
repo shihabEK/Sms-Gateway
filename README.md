@@ -14,6 +14,7 @@ This Laravel Package will helpto  send SMS through various SMS Gateways simpler 
 
 2. Add the service provider to your `config/app.php` providers array:
 
+    **If you're installing on Laravel 5.5+ skip this step**
 
     ```
     shaab\sms\SmsServiceProvider::class,
