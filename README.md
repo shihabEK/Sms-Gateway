@@ -9,6 +9,10 @@
 
 This Laravel Package will helpto  send SMS through various SMS Gateways simpler than ever.
 
+### Supported Gateways
+
+1. [MSG91  ](https://msg91.com/)
+
 
 ### Installation
 
@@ -46,9 +50,9 @@ This Laravel Package will helpto  send SMS through various SMS Gateways simpler 
     ```
     use shaab\sms\Facades\sms;
     ```
-2. Call function
+2. Call Send function
 
-    Syntax: ***SMS::($to,$message);***
+    Syntax: ***SMS::send($to,$message);***
 
     ```
     SMS::send(9567######,"Thank you!");
@@ -58,7 +62,12 @@ This Laravel Package will helpto  send SMS through various SMS Gateways simpler 
     `to`: Single mobile number or an array of numbers
 
     Note: Its basic function in the package.
+3. Check SMS Balance
 
-
+    Syntax: ***SMS::check_balance('`Gateway`',`Route`);***
+    ```
+    SMS::check_balance("MSG91",4);
+    ```
+    Output: Return sms balance in given route.
 
 
