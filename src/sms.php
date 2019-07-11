@@ -15,10 +15,13 @@ class sms
 
     public function MSG91_Send($authKey,$route,$senderId,$to,$message){
 
+        if(is_array($to)){
+            $to = implode (",", $to);
+        }
         //Prepare you post parameters
         $postData = array(
             'authkey' => $authKey,
-            'mobiles' => implode (",", $to),
+            'mobiles' => $to,
             'message' => urlencode($message),
             'sender' => $senderId,
             'route' => $route
