@@ -6,7 +6,7 @@ namespace shaab\sms;
 class sms
 {
     public function send($to,$message){
-
+        return "Success";
         if( config('sms.default.gateway') =="MSG91"){
             return self::msg91_Send(config('sms.MSG91.authKey'),config('sms.MSG91.default_route'),config('sms.default.sender_id'),$to,$message);
         }elseif( config('sms.default.gateway') =="TextLocal"){
@@ -116,9 +116,11 @@ class sms
         echo $response;
     }
     public function msg91_check_balance($authKey,$route){
+        $url = "https://control.msg91.com/api/balance.php?authkey=".$authKey."&type=".$route;
+
         $curl = curl_init();
         curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://control.msg91.com/api/balance.php?authkey=".$authKey."&type=".$route,
+        CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
