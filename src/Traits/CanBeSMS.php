@@ -15,15 +15,9 @@ use shaab\sms\Facades\SMS;
 
 trait CanBeSMS
 {
-    public function send(){
-        return SMS::send(9567302424,'Hello');
-        return $this;
-        return "Trait Working Fine";
-    }
-    public static function boot(){
-        static::retrieved(function($model) {
-            return "From Boot Method";
-        });
+    public function sms($message){
+        $mobile = $mobile ?? 'mobile';
+        return SMS::send($this[$mobile],$message);
     }
 
 }
