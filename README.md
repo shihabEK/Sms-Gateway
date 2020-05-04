@@ -67,6 +67,12 @@ This Laravel Package will helpto  send SMS through various SMS Gateways simpler 
 
     * **Advanced**
 
+        using Trait
+        
+        
+        
+        ```
+        ```
         --In development--
 
 
