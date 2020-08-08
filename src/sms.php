@@ -66,7 +66,7 @@ class sms
         );
 
         //API URL
-        $url="https://api.msg91.com/api/v2/sendsms?country=0";
+        $url="https://api.msg91.com/api/v2/sendsms?country=91";
 
         // init the resource
         $ch = curl_init();
